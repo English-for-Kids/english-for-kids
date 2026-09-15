@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English for Kids</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .contenedor {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #246BCE;
+            font-size: 40px;
+        }
+
+        h2 {
+            color: #FF7043;
+        }
+
+        .menu button {
+            background: #246BCE;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            margin: 5px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .menu button:hover {
+            background: #174A91;
+        }
+
+        .seccion {
+            display: none;
+            margin-top: 25px;
+        }
+
+        .activa {
+            display: block;
+        }
+
+        .tarjetas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .tarjeta {
+            background: #FFF3CD;
+            width: 150px;
+            padding: 15px;
+            border-radius: 15px;
+            font-size: 22px;
+        }
+
+        .emoji {
+            font-size: 45px;
+        }
+
+        .opcion {
+            display: block;
+            margin: 10px auto;
+            padding: 12px;
+            width: 220px;
+            border: none;
+            border-radius: 10px;
+            background: #81D4FA;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .opcion:hover {
+            background: #4FC3F7;
+        }
+
+        #resultado {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <h1>🌟 English for Kids 🌟</h1>
+
+    <p>
+        ¡Aprende inglés jugando!
+    </p>
+
+    <div class="menu">
+        <button onclick="mostrar('saludos')">👋 Greetings</button>
+        <button onclick="mostrar('numeros')">🔢 Numbers</button>
+        <button onclick="mostrar('colores')">🎨 Colors</button>
+        <button onclick="mostrar('animales')">🐶 Animals</button>
+        <button onclick="mostrar('familia')">👨‍👩‍👧 Family</button>
+        <button onclick="mostrar('juego')">🎮 Quiz</button>
+    </div>
+
+    <!-- SALUDOS -->
+    <div id="saludos" class="seccion activa">
+        <h2>👋 Greetings - Saludos</h2>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <div class="emoji">👋</div>
+                <b>Hello</b>
+                <br>
+                Hola
+            </div>
+
+            <div class="tarjeta">
+                <div class="emoji">😊</div>
+                <b>Good morning</b>
+                <br>
+                Buenos días
+            </div>
+
+            <div class="tarjeta">
+                <div class="emoji">🌞</div>
+                <b>Good afternoon</b>
+                <br>
+                Buenas tardes
+            </div>
+
+            <div class="tarjeta">
+                <div class="emoji">🌙</div>
+                <b>Good night</b>
+                <br>
+                Buenas noches
+            </div>
+
+            <div class="tarjeta">
+                <div class="emoji">👋</div>
+                <b>Goodbye</b>
+                <br>
+                Adiós
+            </div>
+
+        </div>
+    </div>
+
+    <!-- NUMEROS -->
+    <div id="numeros" class="seccion">
+        <h2>🔢 Numbers - Números</h2>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">1<br><b>One</b></div>
+            <div class="tarjeta">2<br><b>Two</b></div>
+            <div class="tarjeta">3<br><b>Three</b></div>
+            <div class="tarjeta">4<br><b>Four</b></div>
+            <div class="tarjeta">5<br><b>Five</b></div>
+            <div class="tarjeta">6<br><b>Six</b></div>
+            <div class="tarjeta">7<br><b>Seven</b></div>
+            <div class="tarjeta">8<br><b>Eight</b></div>
+            <div class="tarjeta">9<br><b>Nine</b></div>
+            <div class="tarjeta">10<br><b>Ten</b></div>
+
+        </div>
+    </div>
+
+    <!-- COLORES -->
+    <div id="colores" class="seccion">
+        <h2>🎨 Colors - Colores</h2>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta" style="background:red;color:white;">
+                <b>Red</b><br>Rojo
+            </div>
+
+            <div class="tarjeta" style="background:blue;color:white;">
+                <b>Blue</b><br>Azul
+            </div>
+
+            <div class="tarjeta" style="background:green;color:white;">
+                <b>Green</b><br>Verde
+            </div>
+
+            <div class="tarjeta" style="background:yellow;">
+                <b>Yellow</b><br>Amarillo
+            </div>
+
+            <div class="tarjeta" style="background:orange;">
+                <b>Orange</b><br>Naranja
+            </div>
+
+            <div class="tarjeta" style="background:purple;color:white;">
+                <b>Purple</b><br>Morado
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ANIMALES -->
+    <div id="animales" class="seccion">
+        <h2>🐶 Animals - Animales</h2>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <div class="emoji">🐶</div>
+                <b>Dog</b><br>Perro
+            </div>
+
+            <div class="tarjeta">
+                <div class="emoji">🐱</div>
+                <b>Cat</b><br>Gato
+            </div>
+
+            <div class="tarjeta">
+                <div class="emoji">🐭</div>
+                <b>Mouse</b><br>Ratón
+            </div>
+
+            <div class="tarjeta">
+                <div class="emoji">🐰</div>
+                <b>Rabbit</b><br>Conejo
+            </div>
+
+            <div class="tarjeta">
+                <div class="emoji">🦁</div>
+                <b>Lion</b><br>León
+            </div>
+
+            <div class="tarjeta">
+                <div class="emoji">🐘</div>
+                <b>Elephant</b><br>Elefante
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FAMILIA -->
+    <div id="familia" class="seccion">
+        <h2>👨‍👩‍👧 Family - Familia</h2>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                👨<br>
+                <b>Father</b><br>
+                Papá
+            </div>
+
+            <div class="tarjeta">
+                👩<br>
+                <b>Mother</b><br>
+                Mamá
+            </div>
+
+            <div class="tarjeta">
+                👦<br>
+                <b>Brother</b><br>
+                Hermano
+            </div>
+
+            <div class="tarjeta">
+                👧<br>
+                <b>Sister</b><br>
+                Hermana
+            </div>
+
+            <div class="tarjeta">
+                👴<br>
+                <b>Grandfather</b><br>
+                Abuelo
+            </div>
+
+            <div class="tarjeta">
+                👵<br>
+                <b>Grandmother</b><br>
+                Abuela
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JUEGO -->
+    <div id="juego" class="seccion">
+
+        <h2>🎮 English Quiz</h2>
+
+        <p id="pregunta"></p>
+
+        <button class="opcion" onclick="responder(0)" id="opcion0"></button>
+        <button class="opcion" onclick="responder(1)" id="opcion1"></button>
+        <button class="opcion" onclick="responder(2)" id="opcion2"></button>
+
+        <div id="resultado"></div>
+
+        <button onclick="nuevaPregunta()">
+            🔄 New Question
+        </button>
+
+    </div>
+
+    <footer>
+        🌟 English for Kids - Aprende inglés jugando 🌟
+    </footer>
+
+</div>
+
+<script>
+
+function mostrar(id) {
+
+    let secciones = document.querySelectorAll(".seccion");
+
+    secciones.forEach(function(seccion) {
+        seccion.classList.remove("activa");
+    });
+
+    document.getElementById(id).classList.add("activa");
+
+    if (id === "juego") {
+        nuevaPregunta();
+    }
+}
+
+
+let preguntas = [
+
+    {
+        pregunta: "¿Cómo se dice 'perro' en inglés?",
+        opciones: ["Cat", "Dog", "Lion"],
+        correcta: 1
+    },
+
+    {
+        pregunta: "¿Cómo se dice 'rojo' en inglés?",
+        opciones: ["Blue", "Green", "Red"],
+        correcta: 2
+    },
+
+    {
+        pregunta: "¿Cómo se dice 'tres' en inglés?",
+        opciones: ["Three", "Five", "One"],
+        correcta: 0
+    },
+
+    {
+        pregunta: "¿Cómo se dice 'mamá' en inglés?",
+        opciones: ["Father", "Mother", "Sister"],
+        correcta: 1
+    },
+
+    {
+        pregunta: "¿Cómo se dice 'gato' en inglés?",
+        opciones: ["Dog", "Rabbit", "Cat"],
+        correcta: 2
+    }
+
+];
+
+
+let preguntaActual;
+
+
+function nuevaPregunta() {
+
+    preguntaActual =
+        preguntas[Math.floor(Math.random() * preguntas.length)];
+
+    document.getElementById("pregunta").innerText =
+        preguntaActual.pregunta;
+
+    document.getElementById("opcion0").innerText =
+        preguntaActual.opciones[0];
+
+    document.getElementById("opcion1").innerText =
+        preguntaActual.opciones[1];
+
+    document.getElementById("opcion2").innerText =
+        preguntaActual.opciones[2];
+
+    document.getElementById("resultado").innerText = "";
+}
+
+
+function responder(opcion) {
+
+    let resultado = document.getElementById("resultado");
+
+    if (opcion === preguntaActual.correcta) {
+
+        resultado.innerText = "🎉 ¡Correct! ¡Muy bien!";
+
+        resultado.style.color = "green";
+
+    } else {
+
+        resultado.innerText = "❌ Try again! Inténtalo otra vez.";
+
+        resultado.style.color = "red";
+    }
+}
+
+</script>
+
+</body>
+</html>
